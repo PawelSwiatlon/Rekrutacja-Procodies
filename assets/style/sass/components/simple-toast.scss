@@ -1,0 +1,30 @@
+.simple-toast {
+    position: fixed;
+    bottom: rem(24px);
+    left: 50%;
+    transform: translateX(-50%);
+
+    p {
+        display: flex;
+        padding: rem(8px) rem(16px);
+        background-color: $warning;
+        color: $white;
+        box-shadow: 0 0 30px rgba(0,0,0, 0.3);
+        border-radius: 10px;
+        position: relative;
+        opacity: 0;
+        visibility: hidden;
+        top: rem(50px);
+        @include transition();
+
+        &.success {
+            background-color: $success;
+        }
+
+        &.show {
+            opacity: 1;
+            visibility: visible;
+            top: 0px;
+        }
+    }
+}

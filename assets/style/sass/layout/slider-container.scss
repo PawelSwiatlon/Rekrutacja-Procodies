@@ -1,0 +1,110 @@
+.slider-products {
+    width: 100%;
+    max-width: 486px;
+    position: relative;
+
+    &-nav,
+    &-for {
+        height: 100%;
+        width: 100%;
+
+        .slick-track,
+        .slick-list {
+            width: 100%;
+            height: 100%;
+        }
+
+        &-item {
+            width: 100%;
+            height: 100%;
+            cursor: pointer;
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+
+    &-for { 
+        height: rem(480px);
+        margin-bottom: rem(16px);
+        
+        @media screen and (max-width: 576px) {
+            height: 50vh;
+
+            .slider-products {    
+                &-for { 
+                    &-item {
+                        img {
+                            object-fit: contain;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &-nav {
+        height: rem(132px);
+
+        .slick-list {
+            padding: 0px !important;
+        }
+        
+        .slick-track {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            gap: rem(42px);
+            transform: unset !important;
+
+            &::after,
+            &::before {
+                content: unset;
+            }
+        }
+
+        &-item {
+            width: rem(132px);
+            height: rem(132px);
+            border-radius: rem(14px);
+            border: 1px solid $success;
+            overflow: hidden;
+
+            img {
+                object-fit: cover;
+            }
+        }
+    }
+    
+    .price-info {
+        width: rem(160px);
+        height: rem(160px);
+        border-radius: 100%;
+        background-color: $success;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: absolute;
+        top: rem(-16px);
+        right: rem(-5px);
+        gap: rem(8px);
+
+        color: $white;
+        z-index: 100;
+
+        @media screen and (max-width: 576px) {
+            width: rem(90px);
+            height: rem(90px);
+            gap: 0;
+
+            p.small {
+                font-size: rem(10px);
+                max-width: rem(80px);
+                text-align: center;
+                line-height: rem(14px);
+            }
+        }
+    }
+}

@@ -1,0 +1,13 @@
+.info-boxes {
+    background-color: $gray;
+    padding: rem(16px) rem(24px);
+
+    @media screen and (max-width: 992px) {
+        .form-group {
+            &:not(.column) {
+                flex-direction: column;
+                gap: rem(16px);
+            }
+        }
+    }
+}

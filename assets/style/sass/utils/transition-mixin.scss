@@ -1,0 +1,7 @@
+@mixin transition($time: '') {
+    @if ($time == ''){
+        transition: all 400ms;
+    } @else {
+        transition: $time;
+    }
+}

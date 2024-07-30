@@ -1,0 +1,12 @@
+.color {
+    &-black { color: $black; }
+    &-white { color: $white; }
+
+    &-main-text { color: $main-text; }
+    &-secondary-text { color: $main-text; }
+    &-success { color: $success; }
+
+    &-border { color: $border; }
+    
+    &-gray { color: $gray; }
+}

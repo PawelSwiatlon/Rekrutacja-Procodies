@@ -1,0 +1,28 @@
+.input-box {
+    width: 100%;
+
+    input {
+        width: 100%;
+        padding: rem(12px) rem(16px);
+        border: 1px solid $input-border;
+        border-radius: rem(10px);
+
+        font-size: rem(16px);
+        font-weight: 400;
+
+        @include transition();
+
+        &:focus {
+            border-color: $secondary-text;
+        }
+
+        &:placeholder-shown {
+            color: $placeholders;
+        }
+
+        &.invalid {
+            border-color: $warning;
+            background-color: rgba($color: $warning, $alpha: 0.1);
+        }
+    }
+}

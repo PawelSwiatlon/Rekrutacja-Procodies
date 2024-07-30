@@ -1,0 +1,21 @@
+.form-group {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    width: 100%;
+
+    &.column {
+        flex-direction: column;
+
+        &-min-576 {
+            @media screen and (max-width: 576px) {
+                flex-direction: column;
+            }
+        }
+        
+    }
+
+    &.justify-center {
+        justify-content: center;
+    }
+}

@@ -1,0 +1,26 @@
+.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    svg, img {
+        width: 100%;
+        height: 100%;
+    }
+
+    &.size {
+        &-h {
+            &-40 {
+                height: 100%;
+                max-height: rem(40px);
+            }
+        }
+
+        // &-w {
+        //     &-40 {
+        //         width: 100%;
+        //         max-width: rem(40px);
+        //     }
+        // }
+    }
+}

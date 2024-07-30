@@ -1,0 +1,19 @@
+.container {
+    width: 100%;
+    padding: 0 rem(16px) rem(48px);
+
+    display: flex;
+    gap: rem(16px);
+    
+    @media screen and (max-width: 768px) {
+        padding: 0 rem(16px) rem(32px);
+    }
+
+    @media screen and (max-width: 576px) {
+        padding: 0 rem(16px) rem(24px);
+    }
+
+    &.align-center {
+        align-items: center;
+    }
+}

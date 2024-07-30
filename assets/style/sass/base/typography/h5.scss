@@ -1,0 +1,15 @@
+h5 {
+    font-size: rem(20px);
+    font-weight: 500;
+    line-height: rem(24px);
+
+    @media screen and (max-width: 768px) {
+        font-size: rem(18px);
+        line-height: rem(20px);
+    }
+    
+    @media screen and (max-width: 576px) {
+        font-size: rem(16px);
+        line-height: rem(18px);
+    }
+}

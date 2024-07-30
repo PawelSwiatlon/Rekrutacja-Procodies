@@ -1,0 +1,26 @@
+h2 {
+    font-size: rem(48px);
+    font-weight: 700;
+
+    &.small {
+        font-size: rem(42px);
+        font-weight: 700;
+        margin-bottom: rem(24px);
+
+        @media screen and (max-width: 768px) {
+            font-size: rem(32px);
+        }
+        
+        @media screen and (max-width: 576px) {
+            font-size: rem(24px);
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        font-size: rem(36px);
+    }
+    
+    @media screen and (max-width: 576px) {
+        font-size: rem(32px);
+    }
+}

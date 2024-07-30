@@ -1,0 +1,26 @@
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: rem(24px);
+    border: 1px solid $border;
+    padding: rem(24px);
+    border-radius: rem(20px);
+    gap: rem(24px);
+    position: relative;
+
+    @media screen and (max-width: 992px) {
+        max-width: rem(700px);
+        margin: rem(24px) auto 0;
+        padding: rem(18px);
+        gap: rem(18px);
+    }
+    
+    @media screen and (max-width: 576px) {
+        padding: rem(14px);
+        gap: rem(12px);
+
+        .gap-16 {
+            gap: rem(8px);
+        }
+    }
+}

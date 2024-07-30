@@ -1,0 +1,10 @@
+.site-banner {
+    @media screen and (max-width: 992px) {
+        flex-direction: column-reverse;
+        gap: rem(32px);
+
+        h1, h5 {
+            text-align: center;
+        }
+    }
+}

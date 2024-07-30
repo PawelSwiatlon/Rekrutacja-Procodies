@@ -1,0 +1,7 @@
+@for $i from 1 through 32 {
+    .gap {
+        &-#{$i} {
+            gap: $i + px;
+        }
+    }
+}

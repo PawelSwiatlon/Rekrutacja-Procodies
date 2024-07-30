@@ -1,0 +1,42 @@
+.chessboard {
+    display: flex;
+    flex-direction: column;
+    gap: rem(48px);
+
+    .item {
+        display: flex;
+        gap: rem(32px);
+        align-items: center;
+
+        &:nth-child(2n) {
+            flex-direction: row-reverse;
+        }
+
+        @media screen and (max-width: 992px) {
+            flex-direction: column;
+            
+            &:nth-child(2n) {
+                flex-direction: column;
+            }
+        }
+
+        .img-box {
+            width: 100%;
+            height: 100%;
+            max-width: rem(583px);
+            max-height: rem(583px);
+            overflow: hidden;
+            border-radius: rem(30px);
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        .content-box {
+            flex-grow: 1;
+        }
+    }
+}

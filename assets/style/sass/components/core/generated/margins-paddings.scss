@@ -1,0 +1,115 @@
+@for $j from 1 through 96 {
+    @if($j % 8 == 0) {
+        // margins
+        .mb { 
+            &-#{$j} {
+                margin-bottom: calc(($j / $baseFontSize-for-calc) * 1rem);
+            }
+        }
+
+        .mt { 
+            &-#{$j} {
+                margin-top: calc((($j + px) / $baseFontSize-for-calc) * 1rem);
+            }
+        } 
+
+        .ml { 
+            &-#{$j} {
+                margin-left: calc((($j + px) / $baseFontSize-for-calc) * 1rem);
+            } 
+        } 
+
+        .mr {
+            &-#{$j} {
+                margin-right: calc((($j + px) / $baseFontSize-for-calc) * 1rem);
+            }
+        }
+
+        // paddings
+        .pb { 
+            &-#{$j} {
+                padding-bottom: calc((($j + px) / $baseFontSize-for-calc) * 1rem);
+            }
+        }
+
+        .pt { 
+            &-#{$j} {
+                padding-top: calc((($j + px) / $baseFontSize-for-calc) * 1rem);
+            }
+        }
+
+        .pl { 
+            &-#{$j} {
+                padding-left: calc((($j + px) / $baseFontSize-for-calc) * 1rem);
+            }
+        }
+
+        .pr {
+            &-#{$j} {
+                padding-right: calc((($j + px) / $baseFontSize-for-calc) * 1rem);
+            }
+        }
+        .px {
+            &-#{$j} {
+                padding-right: calc((($j + px) / $baseFontSize-for-calc) * 1rem);
+                padding-left: calc((($j + px) / $baseFontSize-for-calc) * 1rem);
+            }
+        }
+    }
+}
+
+// custom / manual
+.mb { 
+    &-0 {
+        margin-bottom: 0px;
+    }
+}
+
+.mt { 
+    &-0 {
+        margin-top: 0px;
+    }
+} 
+
+.ml { 
+    &-0 {
+        margin-left: 0px;
+    } 
+} 
+
+.mr {
+    &-0 {
+        margin-right: 0px;
+    }
+}
+
+// paddings
+.pb { 
+    &-0 {
+        padding-bottom: 0px;
+    }
+}
+
+.pt { 
+    &-0 {
+        padding-top: 0px;
+    }
+}
+
+.pl { 
+    &-0 {
+        padding-left: 0px;
+    }
+}
+
+.pr {
+    &-0 {
+        padding-right: 0px;
+    }
+}
+.px {
+    &-0 {
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+}

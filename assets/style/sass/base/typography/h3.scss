@@ -1,0 +1,14 @@
+h3 {
+    font-size: rem(32px);
+    font-weight: 500;
+    line-height: rem(37.5px);
+
+    &.bigger {
+        font-size: rem(38px);
+        font-weight: 700;
+
+        @media screen and (max-width: 576px) {
+            font-size: rem(24px);
+        }
+    }
+}

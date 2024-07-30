@@ -1,0 +1,32 @@
+p {
+    font-size: rem(16px);
+    font-weight: 400;
+    line-height: rem(24px);
+    margin-bottom: rem(8px);
+
+    @media screen and (max-width: 768px) {
+        font-size: rem(14px);
+        margin-bottom: rem(6px);
+        line-height: rem(18px);
+    }
+
+    @media screen and (max-width: 576px) {
+        font-size: rem(12px);
+        margin-bottom: rem(4px);
+        line-height: rem(16px);
+    }
+
+    &.small {
+        font-size: rem(12px);
+        line-height: unset;
+    }
+
+    &.extra-small {
+        font-size: rem(10px);
+        line-height: rem(16px);
+    }
+
+    strong {
+        font-weight: 600;
+    }
+}

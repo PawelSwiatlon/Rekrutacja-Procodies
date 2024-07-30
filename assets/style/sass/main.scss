@@ -1,0 +1,46 @@
+// Base
+@import 'base/reset.scss';
+@import 'base/vars.scss';
+@import 'base/base.scss';
+
+// Mixin
+@import 'utils/fontXD-mixin.scss';
+@import 'utils/backgroundImg-mixin.scss';
+@import 'utils/transition-mixin.scss';
+@import 'utils/rem-mixin.scss';
+
+// Typography ( from Base folder ( [!important] import always after import "fontXD" mixin ))
+@import 'base/typography/h1.scss';
+@import 'base/typography/h2.scss';
+@import 'base/typography/h3.scss';
+@import 'base/typography/h4.scss';
+@import 'base/typography/h5.scss';
+// @import 'base/typography/h6.scss';
+@import 'base/typography/p.scss';
+@import 'base/typography/a.scss';
+@import 'base/typography/colors.scss';
+
+// Components
+@import 'components/container.scss';
+@import 'components/form-group.scss';
+@import 'components/input-box.scss';
+@import 'components/button.scss';
+@import 'components/simple-toast.scss';
+@import 'components/loader.scss';
+
+// Components core
+@import 'components/core/base.scss';
+@import 'components/core/generated/margins-paddings.scss';
+@import 'components/core/generated/gap.scss';
+
+// Layout
+@import 'layout/site-wrapper.scss';
+@import 'layout/site-banner.scss';
+@import 'layout/slider-container.scss';
+@import 'layout/contact-container.scss';
+@import 'layout/chessboard.scss';
+@import 'layout/info-boxes.scss';
+@import 'layout/cards.scss';
+
+// Test
+@import 'test/test.scss';
