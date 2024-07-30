@@ -100,11 +100,10 @@ let MainController = {
             if(!$input.val().length || !/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/.test($input.val())) {
                 $input.addClass('invalid');
                 this.simpleToastController('Incorrect email address');
+                this.validContactFormController();
             } else {
                 $input.removeClass('invalid');
             }
-
-            this.validContactFormController();
             return;
         }
 
@@ -112,11 +111,10 @@ let MainController = {
             if(!$input.val().length && $input.attr('required')) {
                 $input.addClass('invalid');
                 this.simpleToastController('Complete the required fields');
+                this.validContactFormController();
             } else {
                 $input.removeClass('invalid');
             }
-
-            this.validContactFormController();
             return;
         }
 
@@ -124,11 +122,10 @@ let MainController = {
             if(!$input.val().length || $input.val().length < 9) {
                 $input.addClass('invalid');
                 this.simpleToastController('Incorrect phone number');
+                this.validContactFormController();
             } else {
                 $input.removeClass('invalid');
             }
-
-            this.validContactFormController();
             return;
         }
     },
